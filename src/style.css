@@ -1,0 +1,71 @@
+body{
+    background-color: #121b30;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    overflow: hidden;
+}
+#screen{
+    width: 100%;
+    font-size: 60px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    text-align: right;
+    background-color: #121b3000;
+    border: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+
+}
+#screen::selection{
+background-color: rgba(255, 255, 255, 0.247);
+}
+#tbar{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px;
+    -webkit-app-region: drag;
+
+}
+*{
+    outline:none;
+}
+#keypad{
+    position: absolute;
+    top: 110px;
+    width: 97.2%;
+    bottom: 0;
+    left: 5px;
+    right: 0px;
+    background-color: #121b3000;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.but{
+    width: 23.2%;
+    font-size: 30px;
+    height: 20%;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    background-color: #3e4c6e0a;
+    border-bottom: 5px solid #121b30;
+    color: white;
+    border-radius: 4px;
+    text-rendering: optimizeLegibility;
+    transition: all ease-in-out 0.2s;
+}
+.but:hover{
+    transform: rotate3d(1,1,0,-30deg);
+    background-color: #354d86;
+}
+.but:active{
+    transform: scale(1.5);
+}
+::selection{
+    user-select: none;
+}
