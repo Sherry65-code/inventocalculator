@@ -1,0 +1,3 @@
+# inventocalculator
+
+Needed packages - electron
